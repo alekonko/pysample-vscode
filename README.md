@@ -70,6 +70,7 @@ python -m venv .venv
 # activate venv
 source .venv/bin/activate
 # update pip (if needed)
+.venv/bin/python -m pip install --upgrade pip
 ```
 
 From officials documentation [python/environments](https://code.visualstudio.com/docs/python/environments)
@@ -98,6 +99,13 @@ pip freeze > requirements.txt
 ```
 pip install -r requirements.txt
 ```
+
+or with new resolve feature (better align dependency)
+
+```
+pip install -r requirements.txt --use-feature=2020-resolver
+```
+
 
 Push on you repo
 
