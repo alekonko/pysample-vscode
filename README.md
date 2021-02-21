@@ -15,6 +15,13 @@ git push -u origin main
 
 Create right .gitignore files, can you use online generator, [this](https://docs.gitignore.io/install/command-line#git)   offer easy api scripts
 
+- for VSCODE native extension
+Press Cmd+P for MacOS and Ctrl+P for Linux/Windows to launch VS Code Quick Open, paste the following command, and press enter.
+
+```
+ext install gi
+```
+
 - for PSH
 ```psh
 #creo funzione, For PowerShell v3
@@ -34,8 +41,11 @@ gig "vscode","python","windows"
 
 - for bash
 ```
-function gig() { curl -sL https://www.toptal.com/developers/gitignore/api/\$@ ;}"
-
+# add to your .bashrc file
+gig(){
+  curl -sL https://www.toptal.com/developers/gitignore/api/$@
+  }
+  
 gig vscode python
 ```
 
