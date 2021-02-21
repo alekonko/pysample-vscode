@@ -51,20 +51,25 @@ gig vscode python
 
 Create virtual env for your project
 
+- Windows 10 (python 3.9)
+
 ```
+# create venv
 py -3 -m venv .venv
-```
-
-activate venv
-
-```
+# activate venv
 .venv\scripts\activate
+# update pip (if needed)
+C:\dev\python\.venv\scripts\python.exe -m pip install --upgrade pip
 ```
 
-update pip (if needed)
-  
+- Linux (Fedora 33 - python 3.9)
+
 ```
-C:\dev\python\.venv\scripts\python.exe -m pip install --upgrade pip
+# create venv
+python -m venv .venv
+# activate venv
+source .venv/bin/activate
+# update pip (if needed)
 ```
 
 From officials documentation [python/environments](https://code.visualstudio.com/docs/python/environments)
